@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/signup"
+            android:icon="@drawable/singnin"
+            android:title="Sign In" />
+
+        <item android:title="Category">
+            <menu>
+                <item
+                    android:id="@+id/eat"
+                    android:icon="@drawable/eat"
+                    android:title="Eat"/>
+
+
+                <item
+                    android:id="@+id/man"
+                    android:icon="@drawable/man"
+                    android:title="Man " />
+                <item
+                    android:id="@+id/woman"
+                    android:icon="@drawable/woman"
+                    android:title="Woman" />
+                <item
+                    android:id="@+id/kids"
+                    android:icon="@drawable/girl"
+                    android:title="Kids" />
+            </menu>
+        </item>
+
+    </group>
+    <group android:checkableBehavior="single">
+
+    <item
+            android:id="@+id/profile"
+            android:icon="@drawable/non_prescription"
+
+            android:title="Profile" />
+        <menu>
+
+            <item
+                android:id="@+id/p_about"
+                android:title="About"
+                android:icon="@drawable/user"
+                android:visible="false" />
+            <item
+                android:id="@+id/my_order"
+                android:title="My order"
+                android:icon="@drawable/spoltlight"
+                android:visible="false" />
+            <item
+            android:id="@+id/my_rewards"
+            android:title="My Rewards"
+            android:icon="@drawable/ayus"
+            android:visible="false" />
+            <item
+            android:id="@+id/my_cart"
+            android:title="My Cart"
+            android:icon="@drawable/cart"
+            android:visible="false" />
+            <item
+            android:id="@+id/my_wishlist"
+            android:title="My Wishlist"
+            android:icon="@drawable/wish"
+            android:visible="false" />
+
+        </menu>
+
+
+</group>
+
+    <item android:title="Explore">
+        <menu>
+            <item
+                android:id="@+id/Home"
+                android:icon="@drawable/home"
+                android:title="Home" >
+
+            </item>
+
+            <item
+                android:id="@+id/Offer"
+                android:icon="@drawable/offer"
+                android:title="View Offer" />
+            <item
+                android:id="@+id/Rate"
+                android:icon="@drawable/rate"
+                android:title="Rate Radhe Gruh App" />
+        </menu>
+    </item>
+    <item android:title="">
+        <menu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <item
+                android:id="@+id/logout"
+
+                android:title="logout" />
+        </menu>
+    </item>
+
+</menu>

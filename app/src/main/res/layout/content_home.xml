@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    tools:showIn="@layout/app_bar_home"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:background="#fff"
+            android:padding="10dp"
+            android:layout_alignParentBottom="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/horizontal_scroll_view12"
+
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_gallery12"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+           />
+
+        <LinearLayout
+
+            android:id="@+id/SliderDots"
+            android:layout_below="@+id/viewPager"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@drawable/boder"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/Prescription_image"-->
+        <!--android:background="@drawable/prescriptionn"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="Order With Prescription"-->
+        <!--android:textSize="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--/>-->
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Upload"-->
+        <!--android:id="@+id/upload"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_gravity="center"/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop By Category"
+                android:textSize="17dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                />
+            <HorizontalScrollView
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_alignParentBottom="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/horizontal_scroll_view"
+
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_gallery"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/servottam"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF7E9D1"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today Deals"
+                android:textSize="17dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                />
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/offergridview"
+                android:numColumns="auto_fit"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended Products"
+                android:textSize="17dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                />
+            <HorizontalScrollView
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_alignParentBottom="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/horizontal_scroll_view1"
+
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_gallery1"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/banner"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF7E9D1"
+        android:layout_marginTop="10dp"
+        >
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/gridview"
+            android:numColumns="auto_fit"
+            />
+    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/radhe"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#f7e9d1"
+            android:layout_marginTop="10dp"
+            >
+        <TextView
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/shopgrid"
+            android:numColumns="auto_fit"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

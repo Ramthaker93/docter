@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+
+    tools:context=".Cart_list">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+
+        android:layout_marginBottom="40dp"/>
+</LinearLayout>
+
+ <!--<Button-->
+
+        <!--android:padding="3dp"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#1d43a3"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:text="Checkout"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:textColor="#fff"-->
+        <!--android:id="@+id/total"/>-->
+        </RelativeLayout>
+
+
+
+

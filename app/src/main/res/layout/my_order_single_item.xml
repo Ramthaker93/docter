@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="2"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="120dp"
+
+            android:padding="2dp"
+
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/image"
+
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+
+                    android:layout_width="fill_parent"
+
+                    android:id="@+id/name"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/selling_price"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+                <TextView
+
+
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/price"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#888"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/discount"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1e86d6"
+                android:textSize="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:textSize="12dp"
+                android:drawableRight="@drawable/star"
+                android:textColor="#fff"
+                android:background="#1e86d6"
+                android:text="4.2"
+                android:id="@+id/rate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/health"
+                    />
+                <TextView
+                    android:textSize="10dp"
+                    android:textColor="#999"
+                    android:layout_marginLeft="5dp"
+                    android:text="No cost EMI and More"
+                    android:id="@+id/emi"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:background="@drawable/ic_delete_black_24dp"
+
+
+
+                android:id="@+id/view"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

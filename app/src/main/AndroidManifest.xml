@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rbm.radhegruh">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cart_list"
+            android:label="Cart" />
+        <activity android:name=".Delete_cart" />
+        <activity android:name=".My_order" />
+        <activity android:name=".product_list" />
+        <activity android:name=".Signle_product" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".forget_password" />
+        <activity android:name=".PayMentGateWay" />
+        <activity android:name=".Sub_cat_list" />
+        <activity android:name=".Type_cat_list" />
+        <activity android:name=".Product_grid" />
+        <activity android:name=".Wishlist" />
+        <activity android:name=".Offer" />
+        <activity android:name=".All_category" />
+        <activity android:name=".SimpleList" />
+        <activity android:name=".Delete_wish" />
+        <activity
+            android:name=".User_profile"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
